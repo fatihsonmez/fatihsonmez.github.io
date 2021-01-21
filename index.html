@@ -11,32 +11,34 @@
 </head>
 <body style="background: #879EAB">
 <div class="d-flex justify-content-between"
-     style="background: #879EAB; width: 1200px; height: auto; margin: 40px auto;">
-    <div class="container" style="background: #1C253A;">
+     style="background: #879EAB; width: 85%; height: auto; margin: 40px auto;">
+    <div class="container" style="background: #1C253A; padding-top: 15px;">
 
-        <div class="row">
+        <div class="row" style="padding-bottom: 15px">
             <div class="col-md-4" style="background: #1C253A;">
 
-                <img src="profile.jpeg"
-                     style="height: 100px; width: 100px; border-radius: 50%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;">
+                <img src="profile.jpeg" id="profileImg"
+                     style="height: 90%; width: 40px; border-radius: 50%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;">
 
             </div>
             <div class="col-md-8" style="background: #1C253A; color: #ffffff">
                 <div class="row"><p style="font-weight: 900">
                     <h1 style="color: #ffffff">Fatih Sönmez</h1></p></div>
-                <div class="row"><p style="font-size: 100%; font-weight: 600;"><i
-                        class="fas fa-envelope"></i> fatihsonmez@protonmail.com </p></div>
-                <div class="row"><p style="font-size: 100%; font-weight: 600;"><i
-                        class="fas fa-phone-alt"></i> +90 507 099 9396</p></div>
-                <div class="row"><p style="font-size: 100%; font-weight: 600;"><i
-                        class="fas fa-map-marker-alt"></i> Tuzla/İstanbul</p></div>
-                <div class="row"><p style="font-size: 100%; font-weight: 600;"><i
-                        class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/fatih-sonmez" target="_blank"
-                                                        rel="noopener noreferrer">linkedin.com/in/fatih-sonmez</a></p>
+                <br>
+                <div class="row"><p style="font-size: 14px; font-weight: 600;">
+                    <i class="fas fa-envelope"></i> fatihsonmez@protonmail.com </p></div>
+                <div class="row"><p style="font-size: 14px; font-weight: 600;">
+                    <i class="fas fa-phone-alt"></i> +90 507 099 9396</p></div>
+                <div class="row"><p style="font-size: 14px; font-weight: 600;">
+                    <i class="fas fa-map-marker-alt"></i> Tuzla/İstanbul</p></div>
+                <div class="row"><p style="font-size: 14px; font-weight: 600;">
+                    <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/fatih-sonmez" target="_blank"
+                                                       rel="noopener noreferrer"> linkedin.com/in/fatih-sonmez</a></p>
                 </div>
-                <div class="row"><p style="font-size: 100%; font-weight: 600;"><i
-                        class="fab fa-github"></i> <a href="https://github.com/fatihsonmez" target="_blank"
-                                                      rel="noopener noreferrer">github.com/fatihsonmez</a></p></div>
+                <div class="row"><p style="font-size: 14px; font-weight: 600;">
+                    <i class="fab fa-github"></i> <a href="https://github.com/fatihsonmez" target="_blank"
+                                                     rel="noopener noreferrer"> github.com/fatihsonmez</a></p>
+                </div>
             </div>
         </div>
 
@@ -46,7 +48,7 @@
                     <h2 style="font-weight: 600"><i class="fas fa-id-card"></i> ABOUT ME</h2>
                 </div>
                 <hr style="border: 2px solid #1C253A; border-radius: 20px">
-                <p style="font-size: 15px; font-weight: 600;">
+                <p style="font-size: 16px; font-weight: 600;">
                     I love programming and solving problems. I don't know why but if you type less than this, it doesn't
                     make it long enough. So I have to write at least this much.
                 </p>
@@ -246,7 +248,7 @@
 
         </div>
 
-        <div class="row" style="background: #ffffff; color: #1C253A">
+        <div class="row" style="background: #ffffff; color: #1C253A; padding-bottom: 15px">
             <div id="projects" style="padding: 40px 40px 0px; width: 100%;">
                 <div id="projectsHeader" style="display: flex;">
                     <h2 style="font-weight: 600"><i class="fas fa-biking"></i> HOBBIES</h2>
@@ -292,4 +294,11 @@
 </div>
 
 </body>
+
+<script>
+
+    let x = document.getElementById("profileImg");
+    let width = x.getAttribute("height");
+    x.style.width = width;
+</script>
 </html>
